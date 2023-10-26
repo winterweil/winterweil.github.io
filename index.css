@@ -1,94 +1,154 @@
-body {
-    background-image: linear-gradient(105deg, rgb(19, 87, 88) 39%, rgb(4, 247, 255) 96%);
-    }
 
-h1 {
-    color: #ffffff;
-    font-size: 300%;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    
-    }
-
-h2 {
-    color: #ffffff;
-    font-size: 300%;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 147px;
+  z-index: 100;
 }
 
-p {
-    color:rgb(255, 255, 255);
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-  }
-  .p {
-    color:rgb(252, 100, 100);
-    padding-left: 20px;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    font-size: 300%;
-}
-    .pp {
-    color:rgb(0, 255, 242);
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    font-size: 300%;
-    }
-
-a {
-    color: rgb(255, 255, 255);
-    margin-left: 1em;
-    margin-bottom: 5px;
-    font-family: Montserrat, sans-serif;
-    padding-left: 20px;
-    font-weight: 600
-  }
-  .a_1{
-    display: block;
-    text-align: center;
-  }
-  .a_2{
-    color: rgb(255, 208, 0);
-    display: block;
-    text-align: center;
-    margin-left: 1em;
-    font-family: Montserrat, sans-serif;
-    padding-left: 20px;
-    font-weight: 600
-  }
-
-page-header__nav-link {
-    margin: 0 25px;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    text-decoration: none;
-}
-page-footer {
-    background-image: linear-gradient(105deg, rgb(255, 255, 255) 39%, rgb(4, 247, 255) 96%);
+.page-header__logo {
+  display: inline-block;
+  margin-right: 237px;
+  width: 202px;
+  height: 147px;
 }
 
-.box {
-    border: 10px solid rgb(252, 100, 100);
-    border-radius: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    max-width: 1000px;
+.page-header__logo-img {
+
+  width: 100%;
+  height: 100%;
 }
 
-.circle-image{
-    display: block;
-    margin-left: 865px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(222, 222, 222, 0.50);
+
+  @support (backdrop-filter: blur(10px)) {
+      backdrop-filter: blur(10px);
+      background-color: rgba(222, 222, 222, 0.50);
   }
+}
+
+.page-header__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1414px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.page-header__nav {
+  display: inline-block;
+  margin-right: 222px;
+  margin-top: auto;
+}
+
+.page-header__nav-link {
+  margin: 0 25px;
+  color: var(--1, #1F1E1E);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.page-header__user-btn {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: transparent;
+  border: 1px solid #1f1e1e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #1f1e1e;
+  line-height: normal;
+}
+
+.home {
+  padding-top: 147px;
+}
+
+.main-header {
+  padding: 100px 0;
+}
+
+.main-header__text,
+.main-header__title {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 400px;
+  font-family: "Lora", sans-serif;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: normal;
+  color: #1f1e1e;
+}
+
+.main-header__title {
+  margin: 0 0 70px;
+  color: var(--1, #1F1E1E);
+  text-align: center;
+  font-family: Lora;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+}
+
+.main-header__picture {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.main-header__text {
+  margin: 0 auto;
+  max-width: 948px;
+  width: 100%;
+  color: var(--1, #1F1E1E);
+  text-align: center;
+  font-family: Lora;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.main-header__picture::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 16.927%;
+}
+
+.main-header__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.page-main {}
+
+.page-footer {}
