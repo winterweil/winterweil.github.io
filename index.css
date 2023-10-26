@@ -86,19 +86,6 @@
   padding: 100px 0;
 }
 
-.main-header__text,
-.main-header__title {
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  font-weight: 400px;
-  font-family: "Lora", sans-serif;
-  text-transform: uppercase;
-  font-size: 45px;
-  line-height: normal;
-  color: #1f1e1e;
-}
-
 .main-header__title {
   margin: 0 0 70px;
   color: var(--1, #1F1E1E);
